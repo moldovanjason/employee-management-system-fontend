@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .information{
@@ -12,7 +13,7 @@
   align-items: center;
 }
 
-.information input {
+input {
   width: 300px;
   height: 50px;
   font-size:20px;
@@ -25,6 +26,55 @@
   height: 30px;
   margin-top: 10px;
   align-self: center;
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: rgb(50, 209, 51, 1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+button:hover{
+  width: 320px;
+  height: 30px;
+  margin-top: 10px;
+  align-self: center;
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: rgb(12, 202, 28);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.employees button{
+  width: 320px;
+  height: 30px;
+  margin-top: 10px;
+  align-self: center;
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: rgb(30, 161, 242);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.employees button:hover{
+  width: 320px;
+  height: 30px;
+  margin-top: 10px;
+  align-self: center;
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: rgb(12, 154, 243);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.deleteBtn{
+  background: rgb(225, 34, 0);
 }
 
  button:hover{

@@ -8,11 +8,12 @@ function App() {
   const [country, setCountry] = useState("");
   const [position, setPosition] = useState("");
   const [wage, setWage] = useState(0);
+  const [newWage, setNewWage] = useState(0);
 
   const [employeeList, setEmployeeList] = useState([]);
 
   const addEmployee = () => {
-    Axios.post("http://localhost:3001/create", {
+    Axios.post("https://beginners-crud.herokuapp.com/create", {
       name: name,
       age: age,
       country: country,
@@ -33,10 +34,46 @@ function App() {
   };
 
   const getEmployees = () => {
-    Axios.get("http://localhost:3001/employees").then((response) => {
-      setEmployeeList(response.data);
+    Axios.get("https://beginners-crud.herokuapp.com/employees").then(
+      (response) => {
+        setEmployeeList(response.data);
+      }
+    );
+  };
+
+  const updateEmployeeWage = (id) => {
+    Axios.put("https://beginners-crud.herokuapp.com/update", {
+      wage: newWage,
+      id: id,
+    }).then((response) => {
+      setEmployeeList(
+        employeeList.map((val) => {
+          return val.id == id
+            ? {
+                id: val.id,
+                name: val.name,
+                country: val.country,
+                age: val.age,
+                position: val.position,
+                wage: newWage,
+              }
+            : val;
+        })
+      );
     });
   };
+
+  const deleteEmployee = (id) => {
+    Axios.delete(`https://beginners-crud.herokuapp.com/delete/${id}`).then(
+      (response) => {
+        setEmployeeList(
+          employeeList.filter((val) => {
+            return val.id != id;
+          })
+        );
+      }
+    );
+  }
 
   return (
     <div className="App">
@@ -93,6 +130,23 @@ function App() {
               <h3>Country: {val.country}</h3>
               <h4 />
               <h3>Wage: {val.wage}</h3>
+              <div>
+                <input
+                  type="number"
+                  placeholder="20000..."
+                  onChange={(e) => {
+                    setNewWage(e.target.value);
+                  }}
+                />
+                <button
+                  onClick={() => {
+                    updateEmployeeWage(val.id);
+                  }}
+                >
+                  Update Wage
+                </button>
+                <button className="deleteBtn" onClick={() => { deleteEmployee(val.id) }}>Delete Employee</button>
+              </div>
             </div>
           );
         })}
