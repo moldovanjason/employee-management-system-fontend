@@ -73,8 +73,12 @@ button:hover{
   font-size: 18px;
 }
 
-.deleteBtn{
-  background: rgb(225, 34, 0);
+.employees .deleteBtn{
+  background: rgb(212, 40, 9);
+}
+
+.employees .deleteBtn:hover{
+  background: rgb(223, 46, 15);
 }
 
  button:hover{
