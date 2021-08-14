@@ -3,6 +3,12 @@
   flex-direction: column;
   justify-content: center;
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.employees h3{
+  width: 500px;
 }
 
 .information{
@@ -118,3 +124,4 @@ h4{
   background-color: gray;
   width: 1px;
 }
+
