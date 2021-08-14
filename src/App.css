@@ -27,8 +27,12 @@ input {
   margin: 5px;
 }
 
+div .employeePlaceholder{
+  width: 230px;
+}
+
  button{
-  width: 320px;
+  width: 250px;
   height: 30px;
   margin-top: 10px;
   align-self: center;
@@ -41,7 +45,7 @@ input {
 }
 
 button:hover{
-  width: 320px;
+  width: 25px;
   height: 30px;
   margin-top: 10px;
   align-self: center;
@@ -54,7 +58,7 @@ button:hover{
 }
 
 .employees button{
-  width: 320px;
+  width: 250px;
   height: 30px;
   margin-top: 10px;
   align-self: center;
@@ -67,7 +71,7 @@ button:hover{
 }
 
 .employees button:hover{
-  width: 320px;
+  width: 250px;
   height: 30px;
   margin-top: 10px;
   align-self: center;
@@ -77,6 +81,10 @@ button:hover{
   border: none;
   border-radius: 10px;
   font-size: 18px;
+}
+
+.rightSide{
+  width: 250px;
 }
 
 .employees .deleteBtn{
@@ -99,10 +107,10 @@ button:hover{
 }
 
 .employee{
-  width: 1100px;
+  width: 1500px;
   height: auto;
   border: 1px solid black;
-  margin: 10px;
+  margin: 20px;
   display: flex;
   padding: 10px;
   justify-content: center;
@@ -125,3 +133,164 @@ h4{
   width: 1px;
 }
 
+@media only screen and (max-width: 1600px) {
+  .employees {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+  }
+  h4 {
+    height: 0px;
+    width: 0px;
+  }
+  .employee {
+    background-color: rgb(242, 252, 255);
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .employees h3 {
+    margin: 5px;
+}
+}
+
+@media only screen and (max-width: 1250px) {
+  .employees {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+  }
+  h4 {
+    height: 0px;
+    width: 0px;
+  }
+  .employee {
+    background-color: rgb(242, 252, 255);
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .employees h3 {
+    margin: 5px;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+  .employees {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+  }
+  h4 {
+    height: 0px;
+    width: 0px;
+  }
+  .employee {
+    background-color: rgb(242, 252, 255);
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    align-items: center;
+    align-self: center;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .employees h3 {
+    margin: 5px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .employees {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+  h4 {
+    height: 0px;
+    width: 0px;
+  }
+  .employee {
+    background-color: rgb(242, 252, 255);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    align-self: center;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .employees h3 {
+    margin: 5px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .employees {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+  }
+  h4 {
+    height: 0px;
+    width: 0px;
+  }
+  .employee {
+    background-color: rgb(242, 252, 255);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    align-self: center;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  .employees h3 {
+    margin: 5px;
+    width: 300px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .employees {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  h4 {
+    height: 0px;
+    width: 0px;
+  }
+  .employee {
+    background-color: rgb(242, 252, 255);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    align-self: center;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  .employees h3 {
+    margin: 5px;
+    width: 200px;
+}
+}

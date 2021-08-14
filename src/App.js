@@ -130,8 +130,9 @@ function App() {
               <h3>Country: {val.country}</h3>
               <h4 />
               <h3>Wage: {val.wage}</h3>
-              <div>
+              <div className="rightSide">
                 <input
+                  className="employeePlaceholder"
                   type="number"
                   placeholder="20000..."
                   onChange={(e) => {
