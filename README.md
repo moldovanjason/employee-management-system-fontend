@@ -12,3 +12,6 @@ This repo from github includes the frontend portion of this project.
 Using Javascript, Html, Css and ReactJS as the primary languages.
 Deloyed the frontend using netlify.
 
+Using 5 differnt inputs to store in 5 differnt react hooks to then submit into the data base using the add employee button.
+Using axios post request to send all data stored from the react hooks to the backend and then store into the database.
+
