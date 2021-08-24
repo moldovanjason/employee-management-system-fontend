@@ -1,14 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(rgb(108, 118, 255),rgb(40, 108, 255), rgb(31, 147, 255));
+  height: 1000%;
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0px;
-  padding: 0px;
+}
+
+h1{
+  align-self: center;
+  font-size: 49px;
+  padding: 25px;
+  color: rgb(20, 20, 20);
 }
 
 .employees h3{
   width: 500px;
+  font-size: 30px;
+}
+
+label{
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
 }
 
 .information{
@@ -17,6 +36,11 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  background: rgb(22, 22, 22);
+  width: 60%;
+  height: 550px;
+  border-radius: 15px;
+  align-self: center;
 }
 
 input {
@@ -24,7 +48,18 @@ input {
   height: 50px;
   font-size:20px;
   padding-left: 10px;
-  margin: 5px;
+  margin: 15px;
+  border: 2px solid rgb(54, 60, 139);
+  border-radius: 5px;
+  box-decoration-break:initial;
+  background: rgb(22, 22, 22);
+  color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 div .employeePlaceholder{
@@ -37,7 +72,7 @@ div .employeePlaceholder{
   margin-top: 10px;
   align-self: center;
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  background: rgb(50, 209, 51, 1);
+  background: rgb(12, 101, 202);
   color: white;
   border: none;
   border-radius: 10px;
@@ -50,7 +85,7 @@ button:hover{
   margin-top: 10px;
   align-self: center;
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  background: rgb(12, 202, 28);
+  background: rgb(11, 85, 170);
   color: white;
   border: none;
   border-radius: 10px;
@@ -63,7 +98,7 @@ button:hover{
   margin-top: 10px;
   align-self: center;
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  background: rgb(30, 161, 242);
+  background: rgb(22, 22, 22);
   color: white;
   border: none;
   border-radius: 10px;
@@ -76,7 +111,7 @@ button:hover{
   margin-top: 10px;
   align-self: center;
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  background: rgb(12, 154, 243);
+  background: rgb(31, 31, 31);
   color: white;
   border: none;
   border-radius: 10px;
@@ -109,14 +144,25 @@ button:hover{
 .employee{
   width: 1500px;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0);
   margin: 20px;
   display: flex;
   padding: 10px;
   justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
   font-weight: 100;
+  color: white;
+  background: #161616;
+  border-radius: 10px;
+}
+
+.employee button{
+  background: #0c65ca;
+}
+
+.employee button:hover{
+  background: #0b56ac;
 }
 
 .employees h3{
@@ -125,12 +171,20 @@ button:hover{
 
 .employees {
   align-self: center;
+  margin-top: 20px;
+  margin-bottom:202px;
 }
 
 h4{
   height: 13px;
   background-color: gray;
   width: 1px;
+}
+
+.employee input{
+border: 1px solid gray;
+margin: 0px;
+margin-top: 2px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -144,7 +198,7 @@ h4{
     width: 0px;
   }
   .employee {
-    background-color: rgb(242, 252, 255);
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     width: 1100px;
@@ -155,6 +209,7 @@ h4{
   }
   .employees h3 {
     margin: 5px;
+    font-size: 2vw
 }
 }
 
@@ -169,7 +224,7 @@ h4{
     width: 0px;
   }
   .employee {
-    background-color: rgb(242, 252, 255);
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     width: 800px;
@@ -180,6 +235,10 @@ h4{
   }
   .employees h3 {
     margin: 5px;
+    font-size: 2.5vw;
+}
+.information{
+  width: 75%;
 }
 }
 
@@ -194,7 +253,7 @@ h4{
     width: 0px;
   }
   .employee {
-    background-color: rgb(242, 252, 255);
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     width: 650px;
@@ -207,6 +266,7 @@ h4{
   }
   .employees h3 {
     margin: 5px;
+    font-size: 3vw;
 }
 }
 
@@ -221,7 +281,7 @@ h4{
     width: 0px;
   }
   .employee {
-    background-color: rgb(242, 252, 255);
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -234,6 +294,13 @@ h4{
   }
   .employees h3 {
     margin: 5px;
+    font-size: 4vw;
+}
+.information{
+  width: 80%;
+}
+h1{
+  font-size: 6vw;
 }
 }
 
@@ -248,7 +315,7 @@ h4{
     width: 0px;
   }
   .employee {
-    background-color: rgb(242, 252, 255);
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -263,6 +330,10 @@ h4{
   .employees h3 {
     margin: 5px;
     width: 300px;
+    font-size: 5vw
+}
+h1 {
+  font-size: 5.5vw;
 }
 }
 
@@ -277,7 +348,7 @@ h4{
     width: 0px;
   }
   .employee {
-    background-color: rgb(242, 252, 255);
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -292,5 +363,7 @@ h4{
   .employees h3 {
     margin: 5px;
     width: 200px;
+    font-size: 5vw;
 }
+
 }
