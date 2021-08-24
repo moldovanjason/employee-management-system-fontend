@@ -7,43 +7,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgb(108, 118, 255),rgb(40, 108, 255), rgb(31, 147, 255));
+  background-image: linear-gradient(
+    rgb(108, 118, 255),
+    rgb(40, 108, 255),
+    rgb(31, 147, 255)
+  );
   height: 1000%;
-  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border: 1px solid rgba(0, 128, 0, 0);
-  -webkit-text-fill-color: rgb(255, 255, 255);
-}
-
-h1{
+h1 {
   align-self: center;
   font-size: 49px;
   padding: 25px;
   color: rgb(20, 20, 20);
 }
 
-.employees h3{
+.employees h3 {
   width: 500px;
   font-size: 30px;
 }
 
-label{
+label {
   font-size: 22px;
   font-weight: 600;
   color: white;
 }
 
-.information{
+.information {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -59,12 +50,12 @@ label{
 input {
   width: 300px;
   height: 50px;
-  font-size:20px;
+  font-size: 20px;
   padding-left: 10px;
   margin: 15px;
   border: 2px solid rgb(54, 60, 139);
   border-radius: 5px;
-  box-decoration-break:initial;
+  box-decoration-break: initial;
   background: rgb(22, 22, 22);
   color: white;
 }
@@ -75,16 +66,16 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-div .employeePlaceholder{
+div .employeePlaceholder {
   width: 230px;
 }
 
- button{
+button {
   width: 250px;
   height: 30px;
   margin-top: 10px;
   align-self: center;
-  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: rgb(12, 101, 202);
   color: white;
   border: none;
@@ -92,12 +83,12 @@ div .employeePlaceholder{
   font-size: 18px;
 }
 
-button:hover{
+button:hover {
   width: 250px;
   height: 30px;
   margin-top: 10px;
   align-self: center;
-  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: rgb(11, 85, 170);
   color: white;
   border: none;
@@ -105,12 +96,12 @@ button:hover{
   font-size: 18px;
 }
 
-.employees button{
+.employees button {
   width: 250px;
   height: 30px;
   margin-top: 10px;
   align-self: center;
-  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: rgb(22, 22, 22);
   color: white;
   border: none;
@@ -118,12 +109,12 @@ button:hover{
   font-size: 18px;
 }
 
-.employees button:hover{
+.employees button:hover {
   width: 250px;
   height: 30px;
   margin-top: 10px;
   align-self: center;
-  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: rgb(31, 31, 31);
   color: white;
   border: none;
@@ -131,30 +122,30 @@ button:hover{
   font-size: 18px;
 }
 
-.rightSide{
+.rightSide {
   width: 250px;
 }
 
-.employees .deleteBtn{
+.employees .deleteBtn {
   background: rgb(212, 40, 9);
 }
 
-.employees .deleteBtn:hover{
+.employees .deleteBtn:hover {
   background: rgb(223, 46, 15);
 }
 
- button:hover{
+button:hover {
   cursor: pointer;
 }
 
-.line{
+.line {
   width: 100%;
   height: 1px;
   background-color: rgb(99, 99, 99);
   margin-top: 10px;
 }
 
-.employee{
+.employee {
   width: 1500px;
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0);
@@ -162,7 +153,7 @@ button:hover{
   display: flex;
   padding: 10px;
   justify-content: center;
-  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 100;
   color: white;
@@ -170,34 +161,34 @@ button:hover{
   border-radius: 10px;
 }
 
-.employee button{
+.employee button {
   background: #0c65ca;
 }
 
-.employee button:hover{
+.employee button:hover {
   background: #0b56ac;
 }
 
-.employees h3{
+.employees h3 {
   margin: 15px;
 }
 
 .employees {
   align-self: center;
   margin-top: 20px;
-  margin-bottom:212px;
+  margin-bottom: 212px;
 }
 
-h4{
+h4 {
   height: 13px;
   background-color: gray;
   width: 1px;
 }
 
-.employee input{
-border: 1px solid gray;
-margin: 0px;
-margin-top: 2px;
+.employee input {
+  border: 1px solid gray;
+  margin: 0px;
+  margin-top: 2px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -222,8 +213,8 @@ margin-top: 2px;
   }
   .employees h3 {
     margin: 5px;
-    font-size: 2vw
-}
+    font-size: 2vw;
+  }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -249,10 +240,10 @@ margin-top: 2px;
   .employees h3 {
     margin: 5px;
     font-size: 2.5vw;
-}
-.information{
-  width: 75%;
-}
+  }
+  .information {
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -280,7 +271,7 @@ margin-top: 2px;
   .employees h3 {
     margin: 5px;
     font-size: 3vw;
-}
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -308,13 +299,13 @@ margin-top: 2px;
   .employees h3 {
     margin: 5px;
     font-size: 4vw;
-}
-.information{
-  width: 80%;
-}
-h1{
-  font-size: 6vw;
-}
+  }
+  .information {
+    width: 80%;
+  }
+  h1 {
+    font-size: 6vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -343,14 +334,14 @@ h1{
   .employees h3 {
     margin: 5px;
     width: 300px;
-    font-size: 5vw
-}
-h1 {
-  font-size: 5.5vw;
-}
-input{
-  width: 250px;
-}
+    font-size: 5vw;
+  }
+  h1 {
+    font-size: 5.5vw;
+  }
+  input {
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -380,13 +371,13 @@ input{
     margin: 5px;
     width: 200px;
     font-size: 5vw;
-}
-input{
-  width: 220px;
-}
-label{
-  font-size: 15px;
-}
+  }
+  input {
+    width: 220px;
+  }
+  label {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 390px) {
@@ -416,15 +407,14 @@ label{
     margin: 5px;
     width: 200px;
     font-size: 5vw;
-}
-h1{
-  font-size: 5vw;
-}
-.information input{
-  width: 200px;
-}
-button{
-  width: 200px;
-}
-
+  }
+  h1 {
+    font-size: 5vw;
+  }
+  .information input {
+    width: 200px;
+  }
+  button {
+    width: 200px;
+  }
 }

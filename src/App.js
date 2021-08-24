@@ -73,14 +73,13 @@ function App() {
         );
       }
     );
-  }
+  };
 
   return (
     <div className="App">
       <h1>Employee Management System</h1>
       <div className="information">
         <label className="Title">Enter Employee Information</label>
-        {/* <label>Name: </label> */}
         <input
           type="text"
           onChange={(e) => {
@@ -88,7 +87,6 @@ function App() {
           }}
           placeholder="Name..."
         />
-        {/* <label>Age: </label> */}
         <input
           type="number"
           onChange={(e) => {
@@ -96,7 +94,6 @@ function App() {
           }}
           placeholder="Age..."
         />
-        {/* <label>Country</label> */}
         <input
           type="text"
           onChange={(e) => {
@@ -104,7 +101,6 @@ function App() {
           }}
           placeholder="Country..."
         />
-        {/* <label>Position: </label> */}
         <input
           type="text"
           onChange={(e) => {
@@ -112,7 +108,6 @@ function App() {
           }}
           placeholder="Position..."
         />
-        {/* <label>Yearly Wage: </label> */}
         <input
           type="number"
           onChange={(e) => {
@@ -122,20 +117,15 @@ function App() {
         />
         <button onClick={addEmployee}>Add Employee</button>
       </div>
-      {/* <div className="line"></div> */}
       <div className="employees">
         <button onClick={getEmployees}>Show Employees</button>
         {employeeList.map((val, key) => {
           return (
             <div className="employee">
               <h3>Name: {val.name}</h3>
-              {/* <h4 /> */}
               <h3>Age: {val.age}</h3>
-              {/* <h4 /> */}
               <h3>Position: {val.position}</h3>
-              {/* <h4 /> */}
               <h3>Country: {val.country}</h3>
-              {/* <h4 /> */}
               <h3>Wage: {val.wage}</h3>
               <div className="rightSide">
                 <input
