@@ -349,7 +349,7 @@ h1 {
   font-size: 5.5vw;
 }
 input{
-  width: 280px;
+  width: 250px;
 }
 }
 
@@ -382,7 +382,49 @@ input{
     font-size: 5vw;
 }
 input{
-  width: 250px;
+  width: 220px;
+}
+label{
+  font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 390px) {
+  .employees {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  h4 {
+    height: 0px;
+    width: 0px;
+  }
+  .employee {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    align-self: center;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  .employees h3 {
+    margin: 5px;
+    width: 200px;
+    font-size: 5vw;
+}
+h1{
+  font-size: 5vw;
+}
+.information input{
+  width: 200px;
+}
+button{
+  width: 200px;
 }
 
 }
