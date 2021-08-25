@@ -1,3 +1,4 @@
+![employee management system 2](https://user-images.githubusercontent.com/66877732/130727919-6674400d-e691-4790-bfd1-39ddc5e7e879.png)
 <!-- ### `npm start`
 
 Runs the app in the development mode.\
