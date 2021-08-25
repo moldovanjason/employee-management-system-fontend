@@ -15,3 +15,4 @@ Deloyed the frontend using netlify.
 Using 5 differnt inputs to store in 5 differnt react hooks to then submit into the data base using the add employee button.
 Using axios post request to send all data stored from the react hooks to the backend and then store into the database.
 ![employee management system](https://user-images.githubusercontent.com/66877732/130699558-717bc872-a641-41a7-aa0e-42d8420737a2.png)
+![employee management system 2](https://user-images.githubusercontent.com/66877732/130727919-6674400d-e691-4790-bfd1-39ddc5e7e879.png)
