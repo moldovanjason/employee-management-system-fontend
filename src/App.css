@@ -177,6 +177,8 @@ button:hover {
   align-self: center;
   margin-top: 20px;
   margin-bottom: 212px;
+  display: flex;
+  flex-direction: column;
 }
 
 h4 {
@@ -189,12 +191,6 @@ h4 {
   border: 1px solid gray;
   margin: 0px;
   margin-top: 2px;
-}
-
-@media only screen and (min-width: 1600px) {
-  .employees button{
-    margin-left: 42%;
-  }
 }
 
 @media only screen and (max-width: 1600px) {
